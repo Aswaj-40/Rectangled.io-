@@ -1,4 +1,3 @@
-/* General Reset */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -8,8 +7,8 @@ body {
     margin-left: 5%;
     height: 50%;
     margin-bottom: 5%;
-    border: 15px solid #a18aff; /* Border color */
-    border-radius: 30px; /* Adjust this value for the curve */
+    border: 15px solid #a18aff; 
+    border-radius: 30px; 
     background-color: #f9f9f9;
   
    
@@ -147,9 +146,6 @@ body {
     background: #f5f4f7;
   }
   
-  
-  
-  /* Form styling */
   .form-group {
     margin-bottom: 20px;
   }
@@ -181,7 +177,6 @@ body {
     background: #000000;
   }
   
-  /* Main Content */
   main {
     width: 100%;
     background: #a18aff;
@@ -196,7 +191,7 @@ body {
     display: none;
   }
   
-  /* Time input styling */
+
   #taskTimeInput {
     width: calc(20% - 20px);
     padding: 5px;
