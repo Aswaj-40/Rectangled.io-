@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="download.png" alt="Profile Picture" class="profile-pic">
+        <div>
+        <p><h2>Do-it</p></h2>
+       <p><h3>ASWAJ</h3></p>
+       </div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li id="todayTasks" class="active">Today Tasks</li>
+          <li id="scheduledTasks">Scheduled Tasks</li>
+          <li id="settings">Settings</li>
+        </ul>
+      </nav>
+      <div id="filterSection">
+        <h3>Filters</h3>
+        <input id="filterNameInput" type="text" placeholder="Filter Name">
+        <input id="filterColorInput" type="color" value="#ff0000">
+        <button id="addFilterButton" class="add-filter-btn">+ Add Filter</button>
+        <ul id="filters"></ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <section id="todayTasksSection" class="content-section">
+        <div class="header">
+          <h1>Today main focus</h1>
+          <h2>Design team meeting</h2>
+        </div>
+        <div class="task-list">
+          <input
+            type="text"
+            placeholder="What is your next task?"
+            id="taskInput"
+          />
+
+          <input
+          type="date"
+          id="taskDateInput"
+        />
+        
+          <input
+            type="time"
+            id="taskTimeInput"
+          />
+          
+          <button id="addTaskButton">Add Task</button>
+          <ul id="tasks"></ul>
+        </div>
+      </section>
+
+      <section id="scheduledTasksSection" class="content-section hidden">
+        <div class="header">
+          <h1>Scheduled Tasks</h1>
+        </div>
+  <ul id="scheduledTasksList"></ul>
+</section>
+        
+
+      <section id="settingsSection" class="content-section hidden">
+        <div class="header">
+          <h1>Settings</h1>
+        </div>
+        <form id="settingsForm">
+          <div class="form-group">
+            <label for="profileName">Profile Name:</label>
+            <input type="text" id="profileName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="language">Language:</label>
+            <select id="language">
+              <option value="English">English</option>
+              <option value="Spanish">Spanish</option>
+              <option value="French">French</option>
+              <option value="German">German</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country">
+              <option value="USA">United States</option>
+              <option value="India">India</option>
+              <option value="UK">United Kingdom</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+          <button type="button" id="saveSettings">Save Settings</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

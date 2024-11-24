@@ -1,0 +1,334 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+    height: 50%;
+    margin-bottom: 5%;
+    border: 15px solid #a18aff; /* Border color */
+    border-radius: 30px; /* Adjust this value for the curve */
+    background-color: #f9f9f9;
+  
+   
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 25%;
+    background: #f9f8fa;
+    border: 2px;
+    margin-left: 5px;
+    margin-top:5px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+  
+  
+  
+  .profile-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+  }
+  .profile-section h1{
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .profile-section p{
+  font-size: 40px;
+  margin: 0;
+  opacity: 0.8;
+  }
+  
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  .menu li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: rgba(80, 11, 219, 0.2);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .add-filter {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-filter h3 {
+    margin: 0 0 10px;
+  }
+  
+  .add-filter input[type="text"],
+  .add-filter input[type="color"]
+  {
+    padding: 15px 5px;
+  }
+  .add-filter button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .add-filter ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .add-filter ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .add-filter ul li span {
+    margin-left: 5px;
+  }
+  
+  .add-filter ul li button {
+    margin-left: auto;
+    background-color: #fd99af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-filter ul li button:hover {
+    background-color: #c76c85;
+  }
+  
+  #tasks li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .menu li:hover,
+  .menu li.active {
+    background: #f5f4f7;
+  }
+  
+  
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #saveSettings {
+    background: #a18aff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #saveSettings:hover {
+    background: #000000;
+  }
+  
+  /* Main Content */
+  main {
+    width: 100%;
+    background: #a18aff;
+    padding: 20px;
+    border-color: #a18aff;
+    border-radius: 3px;
+    
+  }
+
+   
+  .hidden {
+    display: none;
+  }
+  
+  /* Time input styling */
+  #taskTimeInput {
+    width: calc(20% - 20px);
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #fdfdff;
+  }
+  
+  .header h2 {
+    color: #fafafa;
+  }
+
+  #taskDateInput {
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  
+  .task-list,
+  #scheduledTasksList {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  
+  #taskInput {
+    width: calc(70% - 70px);
+    padding: 5px;
+    margin-bottom: 7px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  #addTaskButton {
+    padding: 10px 10px;
+    border: none;
+    background: #a18aff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addTaskButton:hover {
+    background: #ca8bfe;
+  }
+  
+  #tasks,
+  #scheduledTasksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #tasks li,
+  #scheduledTasksList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #tasks li button,
+  #scheduledTasksList li button {
+    background: #ffffff;
+    border: none;
+    color: rgb(19, 19, 19);
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #addFilterButton {
+    background-color: #a18aff; 
+    color: #fffdfd; 
+    font-size: 15px; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  #addFilterButton:hover {
+    background-color: #060606;
+  
+  #addFilterButton:active {
+    transform: scale(0.98); 
+  }
+  
+  #addFilterButton:disabled {
+    background-color: #ccc; 
+  }
+ 
+  
+  .sidebar .menu ul li.active {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-time {
+    color: #717082;
+    font-size: 0.9em;
+  }
+  
+  .task-date {
+    margin-left: 10px;
+    color: #555;
+    font-style: italic;
+  }
+  }
